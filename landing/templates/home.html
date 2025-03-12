@@ -1,0 +1,234 @@
+<!-- landing/templates/landing/index.html -->
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Гарра Руфа</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="header-container">
+        <h1 class="site-title">Гарра Руфа</h1>
+        <nav>
+          <ul>
+            <li><a href="#about">О нас</a></li>
+            <li><a href="#advantages">Преимущества</a></li>
+            <li><a href="#services">Услуги</a></li>
+            <li><a href="#testimonials">Отзывы</a></li>
+            <li><a href="#contact">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section
+        class="hero-section"
+        style="
+          background-image: url('{% static 'images/detailing.jpeg' %}');
+          background-size: cover;
+        "
+      >
+        <div class="overlay"></div>
+        <div class="hero-content">
+          <h1>Преобразите свой автомобиль</h1>
+          <p>
+            С нами ваш автомобиль засияет как новый. От мойки до полировки – мы
+            заботимся о каждой детали.
+          </p>
+        </div>
+      </section>
+      <section id="about">
+        <div class="container">
+          <div class="about-text">
+            <h2>О нас</h2>
+            <p>
+              Наши специалисты - настоящие мастера своего дела. Они не только
+              обладают уникальными навыками и опытом, но и горят страстью к
+              каждой детали. Мы видим красоту в каждой кривой кузова, каждом
+              блеске капли воды, и делаем все возможное, чтобы подчеркнуть эту
+              красоту до мельчайших деталей. Мы гордимся тем, что наша работа -
+              это не просто сервис, это искусство. Мы не просто моем машины, мы
+              преображаем их, придавая им новую жизнь и блеск. Мы стремимся не к
+              совершенству по стандартам, а к совершенству по вашему восприятию.
+              Мы не просто решаем задачи, мы создаем впечатления.
+            </p>
+          </div>
+          <div class="about-image">
+            <img src="{% static 'images/1.jpg' %}" alt="Expo Image" />
+          </div>
+        </div>
+      </section>
+      <section class="advantages-section" id="advantages">
+        <div class="advantages-image">
+          <!-- Здесь будет изображение -->
+          <img src="{% static 'images/2.jpg' %}" alt="Преимущества" />
+        </div>
+        <div class="advantages-content">
+          <h2>Наши преимущества</h2>
+          <ul>
+            <li>
+              <strong>Профессионализм:</strong> Наша команда - это опытные
+              специалисты, готовые обеспечить высочайшее качество обслуживания.
+            </li>
+            <li>
+              <strong>Индивидуальный подход:</strong> Мы учитываем уникальные
+              потребности каждого клиента, предоставляя персонализированные
+              решения.
+            </li>
+            <li>
+              <strong>Качество материалов:</strong> Мы используем только
+              высококачественные материалы и оборудование для достижения
+              безупречных результатов.
+            </li>
+            <li>
+              <strong>Клиентоориентированность:</strong> Наша цель -
+              удовлетворение клиента. Мы стараемся сделать опыт работы с нами
+              приятным и комфортным.
+            </li>
+            <li>
+              <strong>Инновации:</strong> Мы постоянно следим за новыми
+              тенденциями и технологиями, чтобы обеспечить нашим клиентам лучшие
+              услуги в отрасли.
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="services-section" id="services">
+        <div class="services-content">
+          <h2>Наши услуги</h2>
+          <ul>
+            <li>
+              <strong>Полировка:</strong> Восстановление первоначального блеска
+              кузова вашего автомобиля.
+            </li>
+            <li>
+              <strong>Химчистка салона:</strong> Глубокая чистка всех элементов
+              интерьера автомобиля.
+            </li>
+            <li>
+              <strong>Защитное покрытие:</strong> Нанесение защитных материалов
+              для сохранения цвета и защиты от механических повреждений.
+            </li>
+          </ul>
+        </div>
+        <div class="services-image">
+          <img src="{% static 'images/3.jpg' %}" alt="Услуги" />
+        </div>
+      </section>
+      <div class="button-container">
+        <a
+          href="contact/"
+          class="service-order-button"
+          >Заказать услугу</a
+        >
+      </div>
+
+      <div class="testimonials-section" id="testimonials">
+        <div class="testimonial">
+          <img
+            src="{% static 'images/irina.jpg' %}"
+            alt="Client Photo"
+            class="testimonial-image"
+          />
+          <div class="testimonial-info">
+            <h3 class="testimonial-name">Ирина Смирнова</h3>
+            <p class="testimonial-text">
+              Я в восторге от работы Гарра Руфа! Мой автомобиль превратился в
+              настоящий бриллиант после комплексного детейлинга. Внимательный
+              персонал, отличное качество услуг и приятная атмосфера - все это
+              создало незабываемый опыт. Очень рекомендую!
+            </p>
+          </div>
+        </div>
+        <div class="testimonial">
+          <img
+            src="{% static 'images/alex.jpg' %}"
+            alt="Client Photo"
+            class="testimonial-image"
+          />
+          <div class="testimonial-info">
+            <h3 class="testimonial-name">Алексей Петров</h3>
+            <p class="testimonial-text">
+              Я в восторге от результата детейлинга! Моя машина выглядит лучше,
+              чем когда-либо прежде. Процесс был легким и беззаботным благодаря
+              внимательному и профессиональному подходу сотрудников. Теперь я
+              обязательно буду рекомендовать Гарра Руфа всем своим друзьям и
+              знакомым!
+            </p>
+          </div>
+        </div>
+        <div class="testimonial">
+          <img
+            src="{% static 'images/mariya.jpg' %}"
+            alt="Client Photo"
+            class="testimonial-image"
+          />
+          <div class="testimonial-info">
+            <h3 class="testimonial-name">Мария Иванова</h3>
+            <p class="testimonial-text">
+              Никогда не думала, что мой старый автомобиль может выглядеть таким
+              новым! Благодаря детейлингу от Гарра Руфа, моя машина засияла
+              ярким блеском, а салон стал таким чистым, что кажется, будто он
+              только что вышел с завода. Профессиональный и дружелюбный
+              персонал, а также быстрая работа - отличный выбор для ухода за
+              автомобилем!
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="site-footer" id="contact">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Контакты</h3>
+          <p>Телефон: +7 999 999 99 99</p>
+          <p>Email: info@garrarufa.com</p>
+          <p>Адрес: г. Нальчик, ул. Примерная, д. 1</p>
+        </div>
+        <div class="footer-section">
+          <h3>Социальные сети</h3>
+          <a href="https://facebook.com" class="social-icon"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://instagram.com" class="social-icon"
+            ><i class="fab fa-instagram"></i
+          ></a>
+          <a href="https://twitter.com" class="social-icon"
+            ><i class="fab fa-twitter"></i
+          ></a>
+        </div>
+        <div class="footer-section">
+          <h3>О нас</h3>
+          <p>
+            Гарра Руфа – лидер в области детейлинга. Наша миссия – предоставлять
+            качественные услуги по уходу за вашим автомобилем.
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2025 Гарра Руфа. Все права защищены.</p>
+      </div>
+    </footer>
+  </body>
+  <script>
+    let lastScrollTop = 0; // переменная для хранения последней позиции скролла
+    const header = document.querySelector(".site-header"); // выбор элемента шапки
+
+    window.addEventListener("scroll", function () {
+      let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop) {
+        header.style.top = "-60px"; // скрыть шапку
+      } else {
+        header.style.top = "0"; // показать шапку
+      }
+      lastScrollTop = scrollTop;
+    });
+  </script>
+</html>
