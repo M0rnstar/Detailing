@@ -1,41 +1,44 @@
 /* Общие стили */
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9; /* слоновая кость */
-    color: #333;
-    margin: 0;
-    padding: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9; /* слоновая кость */
+  color: #333;
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2, h3, p {
-    margin: 0;
-    padding: 0.5em 0;
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0.5em 0;
 }
 
 /* Стилизация шапки */
 .site-header {
-    background-color: #333;
-    color: white;
-    padding: 20px 0;
-    width: 100%;
-    top: 0;
-    left: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.5);
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-  .header-container {
-    display: flex;
-    flex-direction: column; /* Элементы располагаются вертикально */
-    align-items: center; /* Центрирование элементов по горизонтали */
-    justify-content: center; /* Центрирование элементов по вертикали */
-    width: 100%;
-    margin: 0 auto;
-    text-align: center;
+.header-container {
+  display: flex;
+  flex-direction: column; /* Элементы располагаются вертикально */
+  align-items: center; /* Центрирование элементов по горизонтали */
+  justify-content: center; /* Центрирование элементов по вертикали */
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .site-title {
@@ -43,391 +46,397 @@ h1, h2, h3, p {
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Добавление промежутков между элементами */
+  list-style: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Добавление промежутков между элементами */
 }
 
 nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    padding: 10px 15px;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
 }
 
 nav ul li a:hover {
-    text-decoration: underline;
-    background-color: #444; /* Небольшое выделение при наведении */
+  text-decoration: underline;
+  background-color: #444; /* Небольшое выделение при наведении */
 }
 
 h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 1.5em;
+  margin: 0;
+  padding: 0;
+  font-size: 1.5em;
 }
 
 /* Стилизация основного контента и разделов */
 section {
-    background-color: #fff;
-    margin: 20px 10%;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  background-color: #fff;
+  margin: 20px 10%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 
 /* Стилизация списка преимуществ */
 ul {
-    list-style-type: none;
-    padding: 0;
+  list-style-type: none;
+  padding: 0;
 }
 
 li {
-    padding: 5px 0;
+  padding: 5px 0;
 }
 
 /* Стилизация кнопок */
 button {
-    background-color: olive; /* акцентный цвет */
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
+  background-color: olive; /* акцентный цвет */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
 }
 
 button:hover {
-    background-color: darkolivegreen;
+  background-color: darkolivegreen;
 }
 
 /* Стилизация подвала */
 footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }
 
 .hero-section {
-    border-radius: 0;
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+  background-image: url("../images/Detailing.jpeg");
+  background-size: cover;
+  border-radius: 0;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Черный цвет с прозрачностью 50% */
-    z-index: 5; /* Убедитесь, что оверлей находится между изображением и текстом */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Черный цвет с прозрачностью 50% */
+  z-index: 5; /* Убедитесь, что оверлей находится между изображением и текстом */
 }
 
 .hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    z-index: 10; /* Гарантируем, что текст будет поверх оверлея */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 10; /* Гарантируем, что текст будет поверх оверлея */
 }
 
 .hero-content h1 {
-    font-size: 72px;
-    font-family: TildaSans, Arial, sans-serif;
+  font-size: 72px;
+  font-family: TildaSans, Arial, sans-serif;
 }
 
 .hero-content p {
-    font-size: 24px;
-    font-family: TildaSans, Arial, sans-serif;
+  font-size: 24px;
+  font-family: TildaSans, Arial, sans-serif;
 }
 
 #about {
-    display: flex;
-    align-items: stretch; /* Заставляет дочерние элементы заполнять доступную высоту */
-    background-color: #f9f9f9; /* Фон всего раздела */
-    margin: 0;
-    padding: 0;
-    border: none; /* Убедитесь, что нет внешних границ */
+  display: flex;
+  align-items: stretch; /* Заставляет дочерние элементы заполнять доступную высоту */
+  background-color: #f9f9f9; /* Фон всего раздела */
+  margin: 0;
+  padding: 0;
+  border: none; /* Убедитесь, что нет внешних границ */
 }
 
 .container {
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between; /* Обеспечивает отсутствие промежутков между блоками */
-    width: 100%;
-    margin: auto;
-    padding: 0;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between; /* Обеспечивает отсутствие промежутков между блоками */
+  width: 100%;
+  margin: auto;
+  padding: 0;
 }
 
 .about-text {
-    width: 50%; /* Процент ширины для текста */
-    display: flex;
-    flex-direction: column; /* Столбцовое расположение элементов внутри */
-    justify-content: center; /* Центрирование содержимого по вертикали */
-    padding: 0 20px; /* Отступы внутри текстового блока */
+  width: 50%; /* Процент ширины для текста */
+  display: flex;
+  flex-direction: column; /* Столбцовое расположение элементов внутри */
+  justify-content: center; /* Центрирование содержимого по вертикали */
+  padding: 0 20px; /* Отступы внутри текстового блока */
 }
 
 .about-text h2 {
-    font-size: 32px; /* Размер шрифта для заголовка */
-    color: #333; /* Цвет текста заголовка */
-    margin-bottom: 10px; /* Отступ снизу заголовка */
+  font-size: 32px; /* Размер шрифта для заголовка */
+  color: #333; /* Цвет текста заголовка */
+  margin-bottom: 10px; /* Отступ снизу заголовка */
 }
 
 .about-text p {
-    font-size: 20px; /* Размер шрифта для параграфа */
-    color: #666; /* Цвет текста параграфа */
-    line-height: 1.6; /* Высота строки для параграфа */
+  font-size: 20px; /* Размер шрифта для параграфа */
+  color: #666; /* Цвет текста параграфа */
+  line-height: 1.6; /* Высота строки для параграфа */
 }
 
 .about-image {
-    flex: 1; /* Позволяет изображению занять все оставшееся пространство */
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: stretch;
-    overflow: hidden; /* Обрезает части изображения, выходящие за границы контейнера */
+  flex: 1; /* Позволяет изображению занять все оставшееся пространство */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: stretch;
+  overflow: hidden; /* Обрезает части изображения, выходящие за границы контейнера */
 }
 
 .about-image img {
-    width: 100%;
-    height: 100%; /* Заставляет изображение заполнять всю высоту контейнера */
-    object-fit: cover; /* Обеспечивает покрытие всей области без искажения пропорций */
-    margin-left: auto; /* Выравнивает изображение справа */
+  width: 100%;
+  height: 100%; /* Заставляет изображение заполнять всю высоту контейнера */
+  object-fit: cover; /* Обеспечивает покрытие всей области без искажения пропорций */
+  margin-left: auto; /* Выравнивает изображение справа */
 }
 
 .advantages-section {
-    display: flex;
-    align-items: stretch; /* Заставляет дочерние элементы заполнять доступную высоту */
-    background-color: #f9f9f9; /* Фон всего раздела */
-    margin: 0;
-    padding: 0;
-    border: none; /* Убедитесь, что нет внешних границ */
+  display: flex;
+  align-items: stretch; /* Заставляет дочерние элементы заполнять доступную высоту */
+  background-color: #f9f9f9; /* Фон всего раздела */
+  margin: 0;
+  padding: 0;
+  border: none; /* Убедитесь, что нет внешних границ */
 }
 
-.advantages-image, .advantages-content {
-    flex: 1; /* Оба блока занимают равные части контейнера */
-    display: flex;
-    align-items: center; /* Центрирование содержимого по вертикали */
-    justify-content: center; /* Центрирование содержимого по горизонтали */
+.advantages-image,
+.advantages-content {
+  flex: 1; /* Оба блока занимают равные части контейнера */
+  display: flex;
+  align-items: center; /* Центрирование содержимого по вертикали */
+  justify-content: center; /* Центрирование содержимого по горизонтали */
 }
 
 .advantages-image {
-    order: 1; /* Порядок расположения изображения (слева) */
-    overflow: hidden; /* Обрезает части изображения, выходящие за границы контейнера */
+  order: 1; /* Порядок расположения изображения (слева) */
+  overflow: hidden; /* Обрезает части изображения, выходящие за границы контейнера */
 }
 
 .advantages-image img {
-    width: 100%;
-    height: 100%; /* Заставляет изображение заполнять всю высоту и ширину контейнера */
-    object-fit: cover; /* Обеспечивает покрытие всей области без искажения пропорций */
+  width: 100%;
+  height: 100%; /* Заставляет изображение заполнять всю высоту и ширину контейнера */
+  object-fit: cover; /* Обеспечивает покрытие всей области без искажения пропорций */
 }
 
 .advantages-content {
-    order: 2;
-    width: 50%; /* Процент ширины для текста */
-    display: flex;
-    flex-direction: column; /* Столбцовое расположение элементов внутри */
-    justify-content: center; /* Центрирование содержимого по вертикали */
-    padding: 0 20px; /* Отступы внутри текстового блока */
+  order: 2;
+  width: 50%; /* Процент ширины для текста */
+  display: flex;
+  flex-direction: column; /* Столбцовое расположение элементов внутри */
+  justify-content: center; /* Центрирование содержимого по вертикали */
+  padding: 0 20px; /* Отступы внутри текстового блока */
 }
 
 .advantages-content h2 {
-    font-size: 32px; /* Размер шрифта для заголовка */
-    color: #333; /* Цвет текста заголовка */
-    margin-bottom: 10px; /* Отступ снизу заголовка */
+  font-size: 32px; /* Размер шрифта для заголовка */
+  color: #333; /* Цвет текста заголовка */
+  margin-bottom: 10px; /* Отступ снизу заголовка */
 }
 
 .advantages-content ul {
-    list-style: none; /* Убирает стандартные маркеры списка */
-    padding: 0;
-    margin: 0 0 20px; /* Отступы вокруг списка */
+  list-style: none; /* Убирает стандартные маркеры списка */
+  padding: 0;
+  margin: 0 0 20px; /* Отступы вокруг списка */
 }
 
 .advantages-content li {
-    margin-bottom: 10px; /* Отступы между элементами списка */
-    font-size: 20px; /* Размер шрифта для элементов списка */
-    line-height: 1.6; /* Высота строки */
+  margin-bottom: 10px; /* Отступы между элементами списка */
+  font-size: 20px; /* Размер шрифта для элементов списка */
+  line-height: 1.6; /* Высота строки */
 }
 
 .advantages-content li strong {
-    font-weight: bold; /* Жирное начертание для заголовков преимуществ */
+  font-weight: bold; /* Жирное начертание для заголовков преимуществ */
 }
 
 .services-section {
-    display: flex;
-    align-items: stretch;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-.services-content, .services-image {
-    flex: 1;
-    display: flex;
-    background-color: #f9f9f9;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
+.services-content,
+.services-image {
+  flex: 1;
+  display: flex;
+  background-color: #f9f9f9;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
 }
 
 .services-content {
-    padding: 40px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
 }
 
 .services-content h2 {
-    font-size: 32px;
-    color: #333;
-    margin-bottom: 20px;
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
 }
 
 .services-content ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
 }
 
 .services-content li {
-    margin-bottom: 10px;
-    font-size: 20px;
-    line-height: 1.6;
+  margin-bottom: 10px;
+  font-size: 20px;
+  line-height: 1.6;
 }
 
 .services-content li strong {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .services-image img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .button-container {
-    display: flex;
-    justify-content: center; /* Центрирование кнопки по горизонтали */
-    align-items: center; /* Центрирование кнопки по вертикали */
-    margin-top: 50px; /* Отступ сверху, если требуется отделить от предыдущего элемента */
+  display: flex;
+  justify-content: center; /* Центрирование кнопки по горизонтали */
+  align-items: center; /* Центрирование кнопки по вертикали */
+  margin-top: 50px; /* Отступ сверху, если требуется отделить от предыдущего элемента */
 }
 
 .service-order-button {
-    padding: 15px 30px; /* Паддинги для размера кнопки */
-    border: 4px solid black; /* Граница кнопки */
-    background-color: #f9f9f9; /* Фоновый цвет кнопки */
-    color: black; /* Цвет текста */
-    text-decoration: none; /* Убрать подчеркивание у ссылок */
-    font-family: 'TildaSans', sans-serif; /* Указание шрифта FigmaSans */
-    font-size: 16px; /* Размер шрифта */
-    font-weight: bold;
-    cursor: pointer; /* Курсор в виде указателя для кликабельности */
-    transition: background-color 0.3s; /* Плавное изменение фона при наведении */
+  padding: 15px 30px; /* Паддинги для размера кнопки */
+  border: 4px solid black; /* Граница кнопки */
+  background-color: #f9f9f9; /* Фоновый цвет кнопки */
+  color: black; /* Цвет текста */
+  text-decoration: none; /* Убрать подчеркивание у ссылок */
+  font-family: "TildaSans", sans-serif; /* Указание шрифта FigmaSans */
+  font-size: 16px; /* Размер шрифта */
+  font-weight: bold;
+  cursor: pointer; /* Курсор в виде указателя для кликабельности */
+  transition: background-color 0.3s; /* Плавное изменение фона при наведении */
 }
 
 .service-order-button:hover {
-    background-color: #f0f0f0; /* Цвет фона при наведении */
+  background-color: #f0f0f0; /* Цвет фона при наведении */
 }
 
 .testimonials-section {
-    margin-top: 40px;
-    display: flex;
-    justify-content: space-around; /* Равномерно распределяет элементы по горизонтали */
-    padding: 20px;
-    background-color: #f9f9f9;
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-around; /* Равномерно распределяет элементы по горизонтали */
+  padding: 20px;
+  background-color: #f9f9f9;
 }
 
 .testimonial {
-    flex: 1; /* Каждый элемент будет занимать одинаковое пространство */
-    text-align: center; /* Выравнивание текста по центру */
-    margin: 10px;
+  flex: 1; /* Каждый элемент будет занимать одинаковое пространство */
+  text-align: center; /* Выравнивание текста по центру */
+  margin: 10px;
 }
 
 .testimonial-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%; /* Создание круглой рамки для изображения */
-    object-fit: cover; /* Обеспечивает, чтобы изображения не искажались и полностью заполняли своё пространство */
+  width: 100px;
+  height: 100px;
+  border-radius: 50%; /* Создание круглой рамки для изображения */
+  object-fit: cover; /* Обеспечивает, чтобы изображения не искажались и полностью заполняли своё пространство */
 }
 
 .testimonial-info {
-    padding: 10px;
+  padding: 10px;
 }
 
 .testimonial-name {
-    font-weight: bold;
-    color: #333;
+  font-weight: bold;
+  color: #333;
 }
 
 .testimonial-text {
-    max-width: 400px; /* Устанавливает максимальную ширину текста */
-    margin: auto; /* Центрирует блок на странице */
-    padding: 20px; /* Добавляет внутренние отступы */
-    font-size: 16px;
-    color: #666;
-    line-height: 1.4;
+  max-width: 400px; /* Устанавливает максимальную ширину текста */
+  margin: auto; /* Центрирует блок на странице */
+  padding: 20px; /* Добавляет внутренние отступы */
+  font-size: 16px;
+  color: #666;
+  line-height: 1.4;
 }
 
 .site-footer {
-    background-color: #333; /* Темный фон */
-    color: #fff; /* Белый текст */
-    padding: 20px 0; /* Отступы внутри футера */
-    font-family: 'FigmaSans', sans-serif; /* Шрифт, используемый на сайте */
+  background-color: #333; /* Темный фон */
+  color: #fff; /* Белый текст */
+  padding: 20px 0; /* Отступы внутри футера */
+  font-family: "FigmaSans", sans-serif; /* Шрифт, используемый на сайте */
 }
 
 .footer-content {
-    display: flex;
-    justify-content: space-around; /* Равномерное распределение блоков */
-    padding: 0 10%;
+  display: flex;
+  justify-content: space-around; /* Равномерное распределение блоков */
+  padding: 0 10%;
 }
 
 .footer-section {
-    margin: 10px;
+  margin: 10px;
 }
 
 .footer-section h3 {
-    font-size: 18px;
-    margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 10px;
 }
 
-.footer-section p, .footer-section a {
-    font-size: 14px;
-    line-height: 1.6;
-    color: #ccc; /* Светло-серый текст для контраста */
-    text-decoration: none; /* Убираем подчеркивание у ссылок */
+.footer-section p,
+.footer-section a {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #ccc; /* Светло-серый текст для контраста */
+  text-decoration: none; /* Убираем подчеркивание у ссылок */
 }
 
 .footer-section a:hover {
-    color: #fff; /* Белый цвет при наведении */
+  color: #fff; /* Белый цвет при наведении */
 }
 
 .footer-bottom {
-    text-align: center;
-    margin-top: 20px;
+  text-align: center;
+  margin-top: 20px;
 }
 
 .footer-bottom p {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .footer-section .social-icon i {
-    color: #fff; /* Цвет иконок */
-    font-size: 32px; /* Увеличенный размер иконок */
-    margin: 0 10px; /* Отступы между иконками */
-    text-decoration: none; /* Убирает подчеркивание */
+  color: #fff; /* Цвет иконок */
+  font-size: 32px; /* Увеличенный размер иконок */
+  margin: 0 10px; /* Отступы между иконками */
+  text-decoration: none; /* Убирает подчеркивание */
 }
 
 .social-icon:hover {
-    color: #ccc; /* Цвет иконок при наведении */
+  color: #ccc; /* Цвет иконок при наведении */
 }
